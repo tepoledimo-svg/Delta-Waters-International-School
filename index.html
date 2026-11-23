@@ -34,7 +34,6 @@ a{color:inherit;text-decoration:none}
 button,input,select{font:inherit}
 .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
 
-/* Royal Blue Checkered Uniform Pattern */
 .gingham-strip{
   height:8px;
   background-color:#ffffff;
@@ -51,12 +50,10 @@ button,input,select{font:inherit}
   background-size:22px 22px;
 }
 
-/* Top Utility Bar */
 .top{background:var(--navy);color:#cbd5e1;padding:9px 0;font-size:.82rem;border-bottom:1px solid #ffffff14}
 .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
 .top a{color:var(--amber);font-weight:600}
 
-/* Sticky Glass Header */
 header{
   position:sticky;top:0;z-index:20;
   background:rgba(255,255,255,.92);
@@ -95,7 +92,6 @@ header .wrap{height:80px;display:flex;align-items:center;justify-content:space-b
 .btn.outline:hover{border-color:var(--royal);color:var(--royal)}
 .menu{display:none;border:0;background:none;color:var(--navy);font-size:1.6rem;cursor:pointer}
 
-/* Hero Section */
 .hero{padding:28px 0 44px}
 .hero-box{
   position:relative;overflow:hidden;
@@ -106,7 +102,6 @@ header .wrap{height:80px;display:flex;align-items:center;justify-content:space-b
   display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:32px;
   box-shadow:0 24px 60px rgba(7,20,43,.24);
 }
-/* Subtle Checkered Texture Overlay in Hero */
 .hero-box:before{
   content:"";position:absolute;inset:0;pointer-events:none;
   background-image:
@@ -124,10 +119,7 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .hero-copy p{color:#dbeafe;font-size:1.05rem;max-width:500px;margin:0 0 26px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 
-/* Animated Water Lily Emblem Showcase */
-.crest-stage{
-  position:relative;height:360px;display:grid;place-items:center;
-}
+.crest-stage{position:relative;height:360px;display:grid;place-items:center}
 .ripple{
   position:absolute;border-radius:50%;
   border:1.5px solid rgba(96,165,250,.35);
@@ -169,7 +161,6 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .fp1{left:0;top:24px}
 .fp2{right:0;bottom:22px}
 
-/* Mom-Proof Big Action Dock */
 .dock{
   display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
   margin-top:-26px;position:relative;z-index:5;padding:0 14px;
@@ -189,7 +180,6 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .dock-btn strong{display:block;font-size:.98rem;color:var(--navy)}
 .dock-btn small{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
 
-/* Sections & Scroll Reveal */
 .section{padding:72px 0}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease, transform .65s ease}
 .reveal.in{opacity:1;transform:none}
@@ -198,7 +188,6 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .heading h2{font-size:clamp(1.9rem,3.3vw,2.8rem);line-height:1.1;letter-spacing:-.04em;color:var(--navy);margin:8px 0 0}
 .heading p{color:var(--muted);max-width:440px;margin:0;font-size:.98rem}
 
-/* Interactive Campus & Aquatics Showcase */
 .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
 .tab{
   padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);
@@ -220,7 +209,6 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .tag-list{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
 .tag{background:var(--royal-soft);color:var(--navy);font-size:.8rem;font-weight:750;padding:6px 12px;border-radius:999px}
 
-/* Academic Pathways Cards */
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .stage-card{
   background:white;border:1.5px solid var(--line);border-radius:22px;padding:24px;
@@ -236,7 +224,6 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .link{color:var(--royal);font-weight:800;font-size:.88rem;border:0;background:none;padding:0;cursor:pointer;text-align:left}
 .link:hover{text-decoration:underline}
 
-/* Embedded Estimator & Quick Enrollment Split */
 .planner{
   background:white;border:1.5px solid var(--line);border-radius:28px;
   padding:clamp(24px,4vw,44px);
@@ -263,7 +250,559 @@ h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-.04em;mar
 .est-big span{color:#93c5fd;font-weight:700}
 .est-big strong{font-size:2.1rem;color:var(--amber);letter-spacing:-.03em}
 
-/* News Cards */
 .news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .story{background:white;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.2s}
 .story:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(7,20,43,.08)}
+.art{height:125px;display:grid;place-items:center;font-size:2.8rem;background:linear-gradient(135deg,#dbeafe,#bfdbfe)}
+.story:nth-child(2) .art{background:linear-gradient(135deg,#dcfce7,#bbf7d0)}
+.story:nth-child(3) .art{background:linear-gradient(135deg,#fef3c7,#fde68a)}
+.story-body{padding:20px}
+.story small{color:var(--royal);font-weight:850;letter-spacing:.06em}
+.story h3{font-size:1.05rem;line-height:1.35;margin:8px 0;color:var(--navy)}
+.story p{font-size:.87rem;color:var(--muted);margin:0}
+
+footer{background:var(--navy);color:#cbd5e1;padding:54px 0 24px}
+.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}
+.footgrid h4{color:white;margin:3px 0 14px}
+.footgrid p,.footgrid a,.footgrid span{font-size:.88rem;color:#94a3b8}
+.footlinks{display:grid;gap:9px}
+.footlinks a:hover{color:var(--amber)}
+.copyright{
+  border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;
+  font-size:.8rem;color:#94a3b8;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+}
+
+.modal{position:fixed;inset:0;background:rgba(7,20,43,.72);backdrop-filter:blur(4px);z-index:30;display:none;place-items:center;padding:18px}
+.modal.open{display:grid}
+.dialog{position:relative;width:min(460px,100%);background:white;border-radius:24px;padding:28px;max-height:92vh;overflow-y:auto;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.dialog h2{margin:0 0 6px;color:var(--navy);letter-spacing:-.03em}
+.dialog p{color:var(--muted);font-size:.9rem;margin:0 0 16px}
+.close{position:absolute;right:16px;top:14px;border:0;border-radius:50%;width:36px;height:36px;font-size:1.25rem;cursor:pointer;background:#f1f5f9;color:var(--navy)}
+.notice{font-size:.86rem;color:var(--navy);background:#dbeafe;border-left:4px solid var(--royal);padding:12px;border-radius:10px;margin-top:14px;display:none;font-weight:650}
+.notice.show{display:block}
+
+@media(max-width:920px){
+  .links{display:none;position:absolute;top:80px;left:20px;right:20px;background:white;padding:20px;border-radius:18px;box-shadow:0 16px 40px rgba(7,20,43,.18);flex-direction:column;gap:14px;border:1px solid var(--line)}
+  .links.show{display:flex}
+  .menu{display:block}
+  .hero-box,.showcase-card,.planner{grid-template-columns:1fr}
+  .dock,.grid-4{grid-template-columns:repeat(2,1fr)}
+  .footgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+  .wrap{width:calc(100% - 28px)}
+  .top .wrap span:last-child{display:none}
+  .actions .outline{display:none}
+  .dock,.grid-4,.news,.footgrid{grid-template-columns:1fr}
+  .crest-stage{height:290px}
+  .crest-medallion{width:210px;height:210px}
+  .fp1{top:6px;left:0}
+  .fp2{bottom:6px;right:0}
+}
+</style>
+</head>
+<body>
+
+<div class="gingham-strip"></div>
+<div class="top">
+  <div class="wrap">
+    <span>📍 Boseja, Plot 741, Maun, Botswana · <a href="tel:+2676860560">+267 686 0560</a></span>
+    <span>Cambridge Curriculum · Pre-Primary to A-Levels · <a href="#fees">2027 Admissions Open</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#home">
+      <span class="crest-badge" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 120 120" fill="none">
+          <ellipse cx="32" cy="84" rx="22" ry="13" fill="#16a34a"/>
+          <ellipse cx="88" cy="84" rx="22" ry="13" fill="#16a34a"/>
+          <ellipse cx="60" cy="94" rx="26" ry="14" fill="#22c55e"/>
+          <path d="M60 18L47 54L60 66L73 54L60 18Z" fill="#3b82f6"/>
+          <path d="M34 32L42 64L60 70L50 46L34 32Z" fill="#2563eb"/>
+          <path d="M86 32L78 64L60 70L70 46L86 32Z" fill="#2563eb"/>
+          <path d="M22 50L38 72L58 72L42 56L22 50Z" fill="#1d4ed8"/>
+          <path d="M98 50L82 72L62 72L78 56L98 50Z" fill="#1d4ed8"/>
+          <path d="M60 32L52 60L60 68L68 60L60 32Z" fill="#fef08a"/>
+          <path d="M46 44L52 66L60 69L56 50L46 44Z" fill="#f97316"/>
+          <path d="M74 44L68 66L60 69L64 50L74 44Z" fill="#f97316"/>
+        </svg>
+      </span>
+      <span>Delta Waters International School<small>The Mind is the Man</small></span>
+    </a>
+
+    <nav class="links" id="nav">
+      <a href="#campus">Campus & Aquatics</a>
+      <a href="#academics">Academics</a>
+      <a href="#fees">2027 Fees</a>
+      <a href="#news">School News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <button class="btn outline" data-open="portal">Portal Sign In</button>
+      <button class="btn" data-open="admission">Apply 2027 ↗</button>
+      <button class="menu" id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-box">
+        <div class="hero-copy">
+          <span class="eyebrow">🪷 SMART Exemplary School · Maun</span>
+          <h1>The Mind is <span style="color:var(--amber)">the Man.</span></h1>
+          <p>Welcome to Delta Waters International School—a premier co-educational academy in Maun guiding students from Pre-Primary through Cambridge IGCSE and A-Levels.</p>
+          <div class="hero-actions">
+            <button class="btn gold" data-open="admission">Start 2027 Application →</button>
+            <a class="btn outline" href="#fees" style="background:rgba(255,255,255,.1);color:white;border-color:rgba(255,255,255,.28)">Calculate Term Fees</a>
+          </div>
+        </div>
+
+        <div class="crest-stage">
+          <div class="ripple r1"></div>
+          <div class="ripple r2"></div>
+          <div class="ripple r3"></div>
+
+          <div class="float-pill fp1">
+            <span style="font-size:1.3rem">🏊</span>
+            <div>Aquatics & Sport<small>Year-round training & galas</small></div>
+          </div>
+
+          <div class="crest-medallion" aria-label="Delta Waters Water Lily Crest">
+            <svg width="215" height="215" viewBox="0 0 240 240" fill="none">
+              <defs>
+                <path id="topArc" d="M 32,125 A 88,88 0 1,1 208,125"/>
+              </defs>
+              <text fill="#ffffff" font-size="14.5" font-weight="800" letter-spacing="2.2">
+                <textPath href="#topArc" startOffset="50%" text-anchor="middle">DELTA WATERS INT’L SCHOOL</textPath>
+              </text>
+              <path d="M120 132 L72 154" stroke="#84cc16" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 132 L168 154" stroke="#84cc16" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 132 L120 164" stroke="#65a30d" stroke-width="8" stroke-linecap="round"/>
+              <path d="M66 142 C44 142, 34 166, 56 176 C78 186, 98 168, 86 150 L74 156 Z" fill="#16a34a"/>
+              <path d="M174 142 C196 142, 206 166, 184 176 C162 186, 142 168, 154 150 L166 156 Z" fill="#16a34a"/>
+              <path d="M120 156 C92 156, 84 188, 120 194 C156 188, 148 156, 120 156 Z" fill="#22c55e"/>
+              <g class="lily-petals">
+                <path d="M120 46 L104 98 L120 118 L136 98 Z" fill="#60a5fa"/>
+                <path d="M84 62 L94 112 L120 124 L108 86 Z" fill="#3b82f6"/>
+                <path d="M156 62 L146 112 L120 124 L132 86 Z" fill="#3b82f6"/>
+                <path d="M64 84 L86 124 L118 128 L96 102 Z" fill="#2563eb"/>
+                <path d="M176 84 L154 124 L122 128 L144 102 Z" fill="#2563eb"/>
+                <path d="M56 106 L84 132 L118 132 L92 118 Z" fill="#1d4ed8"/>
+                <path d="M184 106 L156 132 L122 132 L148 118 Z" fill="#1d4ed8"/>
+                <path d="M120 68 L110 108 L120 122 L130 108 Z" fill="#fef08a"/>
+                <path d="M100 84 L106 116 L120 124 L115 96 Z" fill="#f97316"/>
+                <path d="M140 84 L134 116 L120 124 L125 96 Z" fill="#f97316"/>
+                <path d="M112 92 L115 118 L120 122 L125 118 L128 92 L120 106 Z" fill="#ef4444"/>
+              </g>
+              <text x="120" y="216" text-anchor="middle" fill="#fbbf24" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="13.5">The Mind is the Man</text>
+            </svg>
+          </div>
+
+          <div class="float-pill fp2">
+            <span style="font-size:1.3rem">🎓</span>
+            <div>Cambridge Pathway<small>Day & Boarding Campus</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dock">
+        <button class="dock-btn" data-open="admission">
+          <span class="dock-num">1</span>
+          <div><strong>Apply for 2027</strong><small>2-minute online form</small></div>
+        </button>
+        <a class="dock-btn" href="#fees">
+          <span class="dock-num">2</span>
+          <div><strong>Check Term Fees</strong><small>Instant BWP calculator</small></div>
+        </a>
+        <button class="dock-btn" data-open="portal">
+          <span class="dock-num">3</span>
+          <div><strong>Parent & Student Portal</strong><small>Reports & timetables</small></div>
+        </button>
+        <button class="dock-btn" data-open="attendance">
+          <span class="dock-num">4</span>
+          <div><strong>Report Absence / Exeat</strong><small>Direct to Boseja desk</small></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="campus">
+    <div class="wrap">
+      <div class="heading">
+        <div>
+          <span class="label">Life at Boseja Campus</span>
+          <h2>Built for learning, sport & character.</h2>
+        </div>
+        <p>Tap any facility below to explore what makes Delta Waters stand out in northern Botswana.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="pool">🏊 Aquatics & Swimming</button>
+        <button class="tab" data-tab="smart">💻 SMART Classrooms</button>
+        <button class="tab" data-tab="boarding">🏠 Boarding Hostels</button>
+        <button class="tab" data-tab="sport">🏃 Athletics & Grounds</button>
+      </div>
+
+      <div class="showcase-card" id="showcase">
+        <div class="showcase-art" id="sc-art">
+          <svg width="100%" height="240" viewBox="0 0 420 240" fill="none">
+            <rect x="20" y="20" width="380" height="200" rx="22" fill="#0ea5e9"/>
+            <rect x="30" y="30" width="360" height="180" rx="16" fill="#38bdf8"/>
+            <line x1="35" y1="75" x2="385" y2="75" stroke="#ffffff" stroke-width="4" stroke-dasharray="14 10"/>
+            <line x1="35" y1="120" x2="385" y2="120" stroke="#fbbf24" stroke-width="4" stroke-dasharray="14 10"/>
+            <line x1="35" y1="165" x2="385" y2="165" stroke="#ffffff" stroke-width="4" stroke-dasharray="14 10"/>
+            <rect x="24" y="45" width="18" height="16" rx="4" fill="#07142b"/>
+            <rect x="24" y="90" width="18" height="16" rx="4" fill="#07142b"/>
+            <rect x="24" y="135" width="18" height="16" rx="4" fill="#07142b"/>
+            <rect x="24" y="180" width="18" height="16" rx="4" fill="#07142b"/>
+            <circle cx="240" cy="98" r="24" stroke="#ffffff" stroke-width="2" opacity=".6"/>
+            <circle cx="160" cy="142" r="18" stroke="#ffffff" stroke-width="2" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="showcase-body">
+          <span class="label" id="sc-label">Flagship Athletics</span>
+          <h3 id="sc-title">Aquatics & Competitive Swimming</h3>
+          <p id="sc-desc">True to our water lily crest, swimming is central to student life at Delta Waters—combining learn-to-swim fundamentals with disciplined squad training and inter-school galas.</p>
+          <div class="tag-list" id="sc-tags">
+            <span class="tag">Squad & Gala Prep</span>
+            <span class="tag">Primary & Secondary</span>
+            <span class="tag">Water Safety</span>
+          </div>
+          <div><button class="btn" data-open="admission">Book a Campus Visit →</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gingham-bg reveal" id="academics">
+    <div class="wrap">
+      <div class="heading">
+        <div>
+          <span class="label">Complete Educational Pathway</span>
+          <h2>One school from Reception to Form 6.</h2>
+        </div>
+        <p>Seamless progression through internationally benchmarked Cambridge curricula right here in Maun.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="stage-card">
+          <span class="stage-badge">Ages 3–6 · Early Years</span>
+          <h3>Pre-Primary</h3>
+          <p>Nurturing curiosity, early literacy, numeracy, music, and motor skills in a warm, structured setting.</p>
+          <button class="link" data-open="admission">Inquire for Reception →</button>
+        </article>
+        <article class="stage-card">
+          <span class="stage-badge">Standard 1–7</span>
+          <h3>Primary School</h3>
+          <p>Strong foundations in English, Mathematics, Science, ICT, and Setswana paired with daily sport and arts.</p>
+          <button class="link" data-open="admission">Inquire for Primary →</button>
+        </article>
+        <article class="stage-card">
+          <span class="stage-badge">Form 1–5 · Cambridge</span>
+          <h3>IGCSE Secondary</h3>
+          <p>Rigorous subject specialization, laboratory sciences, SMART classroom technology, and leadership mentorship.</p>
+          <button class="link" data-open="admission">Inquire for Secondary →</button>
+        </article>
+        <article class="stage-card">
+          <span class="stage-badge">Form 6 · AS & A-Level</span>
+          <h3>Sixth Form</h3>
+          <p>Pre-university academic depth preparing graduates for top universities across Southern Africa and worldwide.</p>
+          <button class="link" data-open="admission">Inquire for A-Levels →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="fees">
+    <div class="wrap">
+      <div class="heading">
+        <div>
+          <span class="label">Transparent Planning</span>
+          <h2>2027 Term Fee Estimator.</h2>
+        </div>
+        <p>Select your child's phase and day or boarding preference to preview estimated term costs in Pula.</p>
+      </div>
+
+      <div class="planner">
+        <div>
+          <div class="field">
+            <label for="phase">1. Select Academic Phase</label>
+            <select id="phase">
+              <option value="8500">Pre-Primary (Reception)</option>
+              <option value="11500" selected>Primary School (Standard 1–7)</option>
+              <option value="15800">Secondary School (Form 1–5 / IGCSE)</option>
+              <option value="18200">Sixth Form (AS & A-Levels)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="board">2. Day Scholar or Hostel Boarding</label>
+            <select id="board">
+              <option value="0">Day Scholar (Maun)</option>
+              <option value="9500">Full Boarding (Hostel Accommodation & Meals)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bus">3. Optional Transport</label>
+            <select id="bus">
+              <option value="0">No School Shuttle Needed</option>
+              <option value="1650">Maun Town Daily Shuttle</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="est-panel">
+          <span class="eyebrow" style="margin-bottom:14px">Estimated Term Breakdown</span>
+          <div class="est-line"><span>Term Tuition</span><strong id="tuition-out">P 11,500</strong></div>
+          <div class="est-line"><span>Boarding & Shuttle</span><strong id="extras-out">P 0</strong></div>
+          <div class="est-line"><span>Sports, Aquatics & ICT</span><strong>Included</strong></div>
+          <div class="est-big">
+            <span>Total Per Term</span>
+            <strong id="total-out">P 11,500</strong>
+          </div>
+          <p style="font-size:.78rem;color:#93c5fd;margin:10px 0 18px">*Illustrative 2027 guide figures. Official schedule issued upon inquiry.</p>
+          <button class="btn gold" style="width:100%" data-open="admission">Request Official Fee Schedule & Apply →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="news" style="padding-top:10px">
+    <div class="wrap">
+      <div class="heading">
+        <div>
+          <span class="label">Live Campus Updates · Synced with Facebook</span>
+          <h2>Happening at Delta Waters.</h2>
+        </div>
+        <p>Official announcements and milestones bridged straight from our school page.</p>
+      </div>
+      <div class="news">
+        <article class="story">
+          <div class="art">🤝</div>
+          <div class="story-body">
+            <small>PARTNERSHIP · 2026</small>
+            <h3>BIHL Trust P150,000 Educational Grant</h3>
+            <p>Supporting upgraded learning initiatives and student development on our Boseja campus.</p>
+          </div>
+        </article>
+        <article class="story">
+          <div class="art">🏅</div>
+          <div class="story-body">
+            <small>SPORT · BNSC</small>
+            <h3>Youth Sport Development Programme</h3>
+            <p>Partnering with the Botswana National Sport Commission to nurture young athletes in Ngamiland.</p>
+          </div>
+        </article>
+        <article class="story">
+          <div class="art">🪷</div>
+          <div class="story-body">
+            <small>ADMISSIONS · 2027</small>
+            <h3>Term 1 Enrollment & Hostel Places</h3>
+            <p>Applications are open for day scholars and boarders across Pre-Primary through A-Levels.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="gingham-strip"></div>
+<footer id="contact">
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <a class="brand" href="#home" style="color:white;margin-bottom:10px">
+          <span class="crest-badge" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 120 120" fill="none">
+              <ellipse cx="32" cy="84" rx="22" ry="13" fill="#16a34a"/>
+              <ellipse cx="88" cy="84" rx="22" ry="13" fill="#16a34a"/>
+              <ellipse cx="60" cy="94" rx="26" ry="14" fill="#22c55e"/>
+              <path d="M60 18L47 54L60 66L73 54L60 18Z" fill="#3b82f6"/>
+              <path d="M34 32L42 64L60 70L50 46L34 32Z" fill="#2563eb"/>
+              <path d="M86 32L78 64L60 70L70 46L86 32Z" fill="#2563eb"/>
+              <path d="M60 32L52 60L60 68L68 60L60 32Z" fill="#fef08a"/>
+            </svg>
+          </span>
+          <span>Delta Waters International School<small style="color:var(--amber)">The Mind is the Man</small></span>
+        </a>
+        <p>Co-educational English-medium day & boarding academy in Maun, Botswana.</p>
+      </div>
+      <div>
+        <h4>Academics</h4>
+        <div class="footlinks">
+          <a href="#academics">Pre-Primary & Primary</a>
+          <a href="#academics">Cambridge IGCSE</a>
+          <a href="#academics">Sixth Form A-Levels</a>
+        </div>
+      </div>
+      <div>
+        <h4>Parent Actions</h4>
+        <div class="footlinks">
+          <a href="#fees">2027 Fee Estimator</a>
+          <a href="#home" data-open="admission">Online Application</a>
+          <a href="#home" data-open="portal">Student & Staff Portal</a>
+          <a href="#home" data-open="attendance">Report an Absence</a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit or Call</h4>
+        <div class="footlinks">
+          <a href="https://maps.google.com/?q=Delta+Waters+International+School+Maun" target="_blank" rel="noopener">Boseja, Plot 741, Maun</a>
+          <span>Private Bag 0153, Maun</span>
+          <a href="tel:+2676860560">+267 686 0560</a>
+          <a href="mailto:info@deltawaters.co.bw">info@deltawaters.co.bw</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 Delta Waters International School. All rights reserved.</span>
+      <span>deltawaters.co.bw · Maun, Botswana</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="portal" role="dialog" aria-modal="true">
+  <div class="dialog">
+    <button class="close" aria-label="Close">×</button>
+    <h2>DWIS Digital Portal</h2>
+    <p>Sign in with your <strong>@deltawaters.co.bw</strong> account.</p>
+    <form data-type="portal">
+      <div class="field"><label for="role">I am a...</label><select id="role"><option>Parent / Guardian</option><option>Student</option><option>Teacher / Staff</option></select></div>
+      <div class="field"><label for="email">School Email or Student ID</label><input id="email" required placeholder="name@deltawaters.co.bw"></div>
+      <div class="field"><label for="password">Password</label><input id="password" required type="password" placeholder="••••••••"></div>
+      <button class="btn" style="width:100%" type="submit">Continue to Portal</button>
+      <div class="notice"></div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="attendance" role="dialog" aria-modal="true">
+  <div class="dialog">
+    <button class="close" aria-label="Close">×</button>
+    <h2>Attendance & Exeat Desk</h2>
+    <p>Send an absence or hostel exeat note straight to Boseja Reception.</p>
+    <form data-type="attendance">
+      <div class="field"><label for="student">Student Full Name & Class</label><input id="student" required placeholder="e.g. Kaelo Modise — Std 6"></div>
+      <div class="field"><label for="date">Date</label><input id="date" type="date" required></div>
+      <div class="field"><label for="guardian">Parent Phone / WhatsApp</label><input id="guardian" required placeholder="+267 7X XXX XXX"></div>
+      <button class="btn" style="width:100%" type="submit">Send Notice</button>
+      <div class="notice"></div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="admission" role="dialog" aria-modal="true">
+  <div class="dialog">
+    <button class="close" aria-label="Close">×</button>
+    <h2>2027 Application Inquiry</h2>
+    <p>Fill in 3 quick details to receive your instant DWIS tracking code.</p>
+    <form data-type="admission">
+      <div class="field"><label for="name">Parent / Guardian Name</label><input id="name" required placeholder="Your full name"></div>
+      <div class="field"><label for="app-contact">Phone (WhatsApp) or Email</label><input id="app-contact" required placeholder="+267 7X XXX XXX"></div>
+      <div class="field"><label for="grade">Class / Form Applying For</label><select id="grade"><option>Pre-Primary</option><option>Primary (Std 1–7)</option><option>Secondary (Form 1–5)</option><option>Sixth Form (A-Levels)</option></select></div>
+      <button class="btn gold" style="width:100%" type="submit">Get My Application Reference →</button>
+      <div class="notice"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{
+  const open=nav.classList.toggle('show');
+  menu.setAttribute('aria-expanded',open);
+  menu.textContent=open?'×':'☰';
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  nav.classList.remove('show');menu.setAttribute('aria-expanded','false');menu.textContent='☰';
+}));
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')});
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+const campusData={
+  pool:{
+    label:'Flagship Athletics',
+    title:'Aquatics & Competitive Swimming',
+    desc:'True to our water lily crest, swimming is central to student life at Delta Waters—combining learn-to-swim fundamentals with disciplined squad training and inter-school galas.',
+    tags:['Squad & Gala Prep','Primary & Secondary','Water Safety'],
+    bg:'linear-gradient(135deg,#0d2147,#1d4ed8)',
+    art:`<svg width="100%" height="240" viewBox="0 0 420 240" fill="none"><rect x="20" y="20" width="380" height="200" rx="22" fill="#0ea5e9"/><rect x="30" y="30" width="360" height="180" rx="16" fill="#38bdf8"/><line x1="35" y1="75" x2="385" y2="75" stroke="#fff" stroke-width="4" stroke-dasharray="14 10"/><line x1="35" y1="120" x2="385" y2="120" stroke="#fbbf24" stroke-width="4" stroke-dasharray="14 10"/><line x1="35" y1="165" x2="385" y2="165" stroke="#fff" stroke-width="4" stroke-dasharray="14 10"/><rect x="24" y="45" width="18" height="16" rx="4" fill="#07142b"/><rect x="24" y="90" width="18" height="16" rx="4" fill="#07142b"/><rect x="24" y="135" width="18" height="16" rx="4" fill="#07142b"/><rect x="24" y="180" width="18" height="16" rx="4" fill="#07142b"/><circle cx="240" cy="98" r="24" stroke="#fff" stroke-width="2" opacity=".6"/><circle cx="160" cy="142" r="18" stroke="#fff" stroke-width="2" opacity=".5"/></svg>`
+  },
+  smart:{
+    label:'SMART Exemplary School',
+    title:'Interactive Digital Classrooms & Labs',
+    desc:'Equipped with SMART board technology, science laboratories, and ICT suites that prepare learners for modern Cambridge assessments and university research.',
+    tags:['SMART Boards','Science Labs','Cambridge ICT'],
+    bg:'linear-gradient(135deg,#07142b,#1e3a8a)',
+    art:`<svg width="100%" height="240" viewBox="0 0 420 240" fill="none"><rect x="65" y="32" width="290" height="156" rx="16" fill="#1e293b" stroke="#60a5fa" stroke-width="4"/><rect x="82" y="48" width="256" height="124" rx="8" fill="#0f172a"/><circle cx="155" cy="110" r="32" stroke="#fbbf24" stroke-width="4"/><path d="M215 86H310M215 110H295M215 134H275" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/><rect x="180" y="188" width="60" height="14" rx="4" fill="#94a3b8"/></svg>`
+  },
+  boarding:{
+    label:'Residential Life',
+    title:'Safe, Supervised Campus Hostels',
+    desc:'Comfortable residential accommodation in Maun for students from across Ngamiland and beyond—complete with structured evening prep, balanced meals, and pastoral care.',
+    tags:['24/7 Pastoral Care','Evening Study Prep','Nutritious Dining'],
+    bg:'linear-gradient(135deg,#0d2147,#1e40af)',
+    art:`<svg width="100%" height="240" viewBox="0 0 420 240" fill="none"><path d="M210 34L65 110H355L210 34Z" fill="#fbbf24"/><rect x="90" y="110" width="240" height="96" rx="8" fill="#ffffff"/><rect x="188" y="146" width="44" height="60" rx="22" fill="#1d4ed8"/><rect x="118" y="136" width="42" height="36" rx="6" fill="#93c5fd"/><rect x="260" y="136" width="42" height="36" rx="6" fill="#93c5fd"/></svg>`
+  },
+  sport:{
+    label:'Holistic Development',
+    title:'Sports Fields, Courts & Clubs',
+    desc:'From football, netball, and track athletics to debate, music, and environmental clubs—every student discovers their strengths beyond the classroom.',
+    tags:['Football & Netball','Track & Field','Arts & Debate'],
+    bg:'linear-gradient(135deg,#064e3b,#16a34a)',
+    art:`<svg width="100%" height="240" viewBox="0 0 420 240" fill="none"><rect x="30" y="28" width="360" height="184" rx="20" fill="#15803d" stroke="#bbf7d0" stroke-width="4"/><line x1="210" y1="28" x2="210" y2="212" stroke="#bbf7d0" stroke-width="3"/><circle cx="210" cy="120" r="38" stroke="#bbf7d0" stroke-width="3"/><circle cx="210" cy="120" r="6" fill="#fbbf24"/></svg>`
+  }
+};
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const d=campusData[btn.dataset.tab];
+    document.getElementById('sc-label').textContent=d.label;
+    document.getElementById('sc-title').textContent=d.title;
+    document.getElementById('sc-desc').textContent=d.desc;
+    document.getElementById('sc-tags').innerHTML=d.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+    const art=document.getElementById('sc-art');
+    art.style.background=d.bg;
+    art.innerHTML=d.art;
+  });
+});
+
+const phase=document.getElementById('phase'),board=document.getElementById('board'),bus=document.getElementById('bus');
+function calcFees(){
+  const t=+phase.value,x=(+board.value)+(+bus.value);
+  document.getElementById('tuition-out').textContent='P '+t.toLocaleString();
+  document.getElementById('extras-out').textContent='P '+x.toLocaleString();
+  document.getElementById('total-out').textContent='P '+(t+x).toLocaleString();
+}
+[phase,board,bus].forEach(el=>el.addEventListener('change',calcFees));
+
+function show(id){
+  document.querySelectorAll('.modal.open').forEach(m=>m.classList.remove('open'));
+  document.getElementById(id)?.classList.add('open');
+}
+document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.open)));
+document.querySelectorAll('.modal').forEach(m=>{
+  m.addEventListener('click',e=>{if(e.target===m||e.target.closest('.close'))m.classList.remove('open')});
+  m.querySelector('form')?.addEventListener('submit',e=>{
+    e.preventDefault();
+    const n=m.querySelector('.notice'),t=e.currentTarget.dataset.type;
+    const ref='DWIS-2027-'+Math.floor(1000+Math.random()*9000);
+    if(t==='admission') n.textContent=`Success! Your reference code is ${ref}. Our Maun admissions office (+267 686 0560) will reach out shortly.`;
+    else if(t==='attendance') n.textContent=`Logged under Ref ${ref} and sent to Boseja Reception.`;
+    else n.textContent=`Portal gateway active — ready to connect to DWIS student & staff accounts.`;
+    n.classList.add('show');
+    e.currentTarget.reset();
+  });
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal.open').forEach(m=>m.classList.remove('open'))});
+</script>
+</body>
+</html>
